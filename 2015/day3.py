@@ -1,13 +1,14 @@
 def main():
     text: str = open('input3.txt').read()
-    part_1: int = 0
-    part_2: int = 0
     coord: tuple[int, int] = (0, 0)
+    coords: list[tuple[int, int]] = [coord]
+
     coord_santa: tuple[int, int] = (0, 0)
     coord_robot: tuple[int, int] = (0, 0)
-    coords: list[tuple[int, int]] = [coord]
+
     coords_santa: list[tuple[int, int]] = [coord_santa]
     coords_robot: list[tuple[int, int]] = [coord_robot]
+
     for c in text:
         coord = get_new_coord(c, coord)
         coords.append(coord)
@@ -18,8 +19,12 @@ def main():
         else:
             coord_robot = get_new_coord(text[i], coord_robot)
             coords_robot.append(coord_robot)
-    print(f'Part 1: {len(set(coords))}')
-    print(f'Part 2: {len(set(coords_santa + coords_robot))}')
+
+    part_1: int = len(set(coords))
+    part_2: int = len(set(coords_santa + coords_robot))
+
+    print(f'Part 1: {part_1}')
+    print(f'Part 2: {part_2}')
 
 
 def get_new_coord(c: str, coord: tuple[int, int]) -> tuple[int, int]:
