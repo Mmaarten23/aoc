@@ -1,4 +1,5 @@
 import re
+from re import Match
 
 
 def main():
@@ -6,7 +7,7 @@ def main():
     # lights: list[list[int]] = [[False for _ in range(0, 1_000)] for _ in range(0, 1_000)]
     lights: list[list[int]] = [[0 for _ in range(0, 1_000)] for _ in range(0, 1_000)]
     for command in commands:
-        match = re.search(r'(.*) (\d+),(\d+) through (\d+),(\d+)', command)
+        match: Match = re.search(r'(.*) (\d+),(\d+) through (\d+),(\d+)', command)
         cmd: str = match.group(1)
         coord: tuple[int, int] = (int(match.group(2)), int(match.group(3)))
         coord2: tuple[int, int] = (int(match.group(4)) + 1, int(match.group(5)) + 1)
