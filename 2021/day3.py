@@ -1,4 +1,4 @@
-def main1(length):
+def main1(length=5):
     arr = [0] * length
     count = 0
     f = open("input/input3.txt", "r")
@@ -66,5 +66,5 @@ def main2():
 
 
 if __name__ == '__main__':
-    # main1(5)
+    main1(5)
     main2()
