@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    lines: list[str] = open('input5.txt').readlines()
+    lines: list[str] = open('input/input5.txt').readlines()
     part_1: int = 0
     part_2: int = 0
     for line in lines:

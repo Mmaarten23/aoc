@@ -1,5 +1,5 @@
 def main():
-    text: str = open('input1.txt').read()
+    text: str = open('input/input1.txt').read()
     part_1: int = text.count('(') - text.count(')')
     part_2: int = 0
     floor: int = 0

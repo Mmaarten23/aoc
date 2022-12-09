@@ -1,6 +1,6 @@
 def main():
     board = [[0 for col in range(1000)] for row in range(1000)]
-    f = open("input.txt", "r")
+    f = open("input/input5.txt", "r")
     for line in f:
         coordinates = line.replace("\n", "").split(" -> ")
         x_1, y_1 = [int(a) for a in coordinates[0].split(",")]

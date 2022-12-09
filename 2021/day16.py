@@ -9,7 +9,7 @@ class Packet:
 
 
 def main():
-    f = open("input.txt", "r")
+    f = open("input/input16.txt", "r")
     line = f.readline().replace("\n", "")
     f.close()
     translated = [a for a in translateHex(line)]

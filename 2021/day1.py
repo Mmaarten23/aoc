@@ -1,7 +1,7 @@
 def main1():
     prev = 1000000
     count = 0
-    f = open("input.txt", "r")
+    f = open("input/input1.txt", "r")
     for line in f:
         if int(line) > prev:
             count += 1
@@ -14,7 +14,7 @@ def main2():
     prev = 1000000
     arr = []
     count = 0
-    f = open("input.txt", "r")
+    f = open("input/input1.txt", "r")
     for line in f:
         arr.insert(0, int(line))
         if len(arr) > 3:

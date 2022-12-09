@@ -2,7 +2,7 @@ import math
 
 
 def main():
-    f = open("input.txt", "r")
+    f = open("input/input9.txt", "r")
     lines = f.readlines()
     f.close()
     risk = 0
@@ -25,7 +25,7 @@ def main():
 
 
 def main2():
-    f = open("input.txt", "r")
+    f = open("input/input9.txt", "r")
     lines = f.readlines()
     f.close()
     heightmap = [[int(char) for char in line.replace("\n", "")] for line in lines]

@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    text: str = open('input5.txt', 'r').read()
+    text: str = open('input/input5.txt', 'r').read()
     stack_text, transactions_text = text.split("\n\n")
     stacks_1 = parse_stacks(stack_text)
     stacks_2 = parse_stacks(stack_text)

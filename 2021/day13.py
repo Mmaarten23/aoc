@@ -1,7 +1,7 @@
 def main():
     board = [[1 for _ in range(1311)] for _ in range(892)]
     folds = []
-    f = open("input.txt", "r")
+    f = open("input/input13.txt", "r")
     maxx = 0
     maxy = 0
     for line in f:

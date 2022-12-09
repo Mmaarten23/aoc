@@ -1,5 +1,5 @@
 def main():
-    text: str = open('input1.txt', 'r').read()
+    text: str = open('input/input1.txt', 'r').read()
     sums: list[int] = sorted(get_sums(text), reverse=True)
     print(f'Part 1: {sums[0]}')
     print(f'Part 2: {sum(sums[:3])}')

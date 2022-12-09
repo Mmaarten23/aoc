@@ -1,5 +1,5 @@
 def main():
-    f = open('input.txt', "r")
+    f = open('input/input17.txt', "r")
     x, y = [b for b in
             f.readline().replace("\n", "").replace("target area: ", "").replace("x=", "").replace("y=", "").split(", ")]
     minx, maxx = [int(a) for a in x.split("..")]
@@ -17,7 +17,7 @@ def main():
 
 
 def main2():
-    f = open('input.txt', "r")
+    f = open('input/input17.txt', "r")
     x, y = [b for b in
             f.readline().replace("\n", "").replace("target area: ", "").replace("x=", "").replace("y=", "").split(", ")]
     minx, maxx = [int(a) for a in x.split("..")]

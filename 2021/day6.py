@@ -1,5 +1,5 @@
 def main():
-    f = open("input.txt", "r")
+    f = open("input/input6.txt", "r")
     lines = f.readlines()
     f.close()
     fish = [int(a) for a in lines[0].split(",") if a != "\n"]
@@ -13,7 +13,7 @@ def main():
 
 
 def main2():
-    f = open("input.txt", "r")
+    f = open("input/input6.txt", "r")
     lines = f.readlines()
     f.close()
     fish = [int(a) for a in lines[0].split(",") if a != "\n"]

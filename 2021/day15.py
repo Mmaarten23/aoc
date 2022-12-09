@@ -6,7 +6,7 @@ start_time = time.time()
 TILES = 5
 REMOVED = -1
 
-with open('input.txt') as f:
+with open('input/input15.txt') as f:
     map = [[int(ch) for ch in list(row.strip())] for row in f.readlines()]
 
 

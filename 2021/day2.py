@@ -1,7 +1,7 @@
 def main1():
     depth = 0
     dist = 0
-    f = open("input.txt", "r")
+    f = open("input/input2.txt", "r")
     for line in f:
         comp = line.split(" ")
         if comp[0] == "forward":
@@ -18,7 +18,7 @@ def main2():
     depth = 0
     dist = 0
     aim = 0
-    f = open("input.txt", "r")
+    f = open("input/input2.txt", "r")
     for line in f:
         comp = line.split(" ")
         if comp[0] == "forward":

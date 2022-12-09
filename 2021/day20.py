@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-algorithm, inp = open('input.txt', 'r').read().strip().split('\n\n')
+algorithm, inp = open('input/input20.txt', 'r').read().strip().split('\n\n')
 assert(len(algorithm) == 512)
 image = defaultdict(int)
 

@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    lines: list[str] = open('input7.txt', 'r').readlines()
+    lines: list[str] = open('input/input7.txt', 'r').readlines()
     wires: dict[str, int] = dict()
     calculate_wires(lines, wires)
     a = wires["a"]

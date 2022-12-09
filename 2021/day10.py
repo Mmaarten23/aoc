@@ -1,5 +1,5 @@
 def main():
-    f = open("input.txt", "r")
+    f = open("input/input10.txt", "r")
     lines = f.readlines()
     f.close()
     points = 0
@@ -19,7 +19,7 @@ def main():
 
 
 def main2():
-    f = open("input.txt", "r")
+    f = open("input/input10.txt", "r")
     lines = f.readlines()
     f.close()
     correct_lines = []

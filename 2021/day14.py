@@ -1,5 +1,5 @@
 def main():
-    f = open("input.txt", "r")
+    f = open("input/input14.txt", "r")
     polymer = [a for a in f.readline().replace("\n", "")]
     f.readline()
     rules = {}
@@ -20,7 +20,7 @@ def main():
 
 
 def main2():
-    f = open("input.txt")
+    f = open("input/input14.txt")
     lines = f.read().splitlines()
 
     polymer = lines[0].replace("\n", "")

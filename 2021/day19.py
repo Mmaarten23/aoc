@@ -105,7 +105,7 @@ for remap in remaps:
         )
         orientations.append((remap, negation_))
 
-f = open("input.txt", "r")
+f = open("input/input19.txt", "r")
 input_data = f.read().strip().split("\n")
 
 scanners = []

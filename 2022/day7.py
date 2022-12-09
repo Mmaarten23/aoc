@@ -1,5 +1,5 @@
 def main():
-    text: list[str] = open('input7.txt', 'r').readlines()
+    text: list[str] = open('input/input7.txt', 'r').readlines()
     directories, text = parse_commands(text[1:])
     part_1: int = sum([x for x in directories if x <= 100_000])
     part_2: int = sorted([x for x in directories if x > directories[-1] - 40_000_000])[0]

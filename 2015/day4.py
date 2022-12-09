@@ -2,7 +2,7 @@ import hashlib
 
 
 def main():
-    text: str = open('input4.txt').read()
+    text: str = open('input/input4.txt').read()
     part_1 = 0
     part_2 = 0
     for i in range(1, 10000000000000):

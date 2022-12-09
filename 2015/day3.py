@@ -1,5 +1,5 @@
 def main():
-    text: str = open('input3.txt').read()
+    text: str = open('input/input3.txt').read()
     coord: tuple[int, int] = (0, 0)
     coords: list[tuple[int, int]] = [coord]
 

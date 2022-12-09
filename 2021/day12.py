@@ -1,6 +1,6 @@
 def main():
     links = set()
-    f = open("input.txt", "r")
+    f = open("input/input12.txt", "r")
     for line in f:
         links.add(tuple(a for a in line.replace("\n", "").split("-")))
     f.close()

@@ -219,7 +219,7 @@ def read_number(number: str) -> Pair:
 
 
 def run() -> None:
-    lines = [l.strip() for l in open('input.txt').readlines()]
+    lines = [l.strip() for l in open('input/input18.txt').readlines()]
 
     summed = read_number(lines[0])
     for line in lines[1:]:

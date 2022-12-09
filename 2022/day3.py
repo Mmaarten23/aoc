@@ -1,5 +1,5 @@
 def main():
-    lines: list[str] = open('input3.txt', 'r').readlines()
+    lines: list[str] = open('input/input3.txt', 'r').readlines()
 
     wrong: list = list()
     for line in lines:

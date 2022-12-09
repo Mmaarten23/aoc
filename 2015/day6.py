@@ -3,7 +3,7 @@ from re import Match
 
 
 def main():
-    commands: list[str] = open('input6.txt', 'r').readlines()
+    commands: list[str] = open('input/input6.txt', 'r').readlines()
     # lights: list[list[int]] = [[False for _ in range(0, 1_000)] for _ in range(0, 1_000)]
     lights: list[list[int]] = [[0 for _ in range(0, 1_000)] for _ in range(0, 1_000)]
     for command in commands:

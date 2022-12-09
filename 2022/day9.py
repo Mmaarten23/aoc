@@ -1,5 +1,5 @@
 def main():
-    lines: list[str] = open('input9.txt', 'r').readlines()
+    lines: list[str] = open('input/input9.txt', 'r').readlines()
     commands: list[tuple[str, int]] = [(tokens[0], int(tokens[1])) for tokens in (line.split() for line in lines)]
     coord_t: list[tuple[int, int]] = [(0, 0) for _ in range(10)]
     result_1: set = set()

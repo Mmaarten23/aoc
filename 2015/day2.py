@@ -1,5 +1,5 @@
 def main():
-    lines: list[str] = open('input2.txt').readlines()
+    lines: list[str] = open('input/input2.txt').readlines()
     part_1: int = 0
     part_2: int = 0
     for line in lines:

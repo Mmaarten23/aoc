@@ -1,5 +1,5 @@
 def main():
-    lines: list[str] = open('input8.txt', 'r').readlines()
+    lines: list[str] = open('input/input8.txt', 'r').readlines()
     field: list[list[int]] = [[int(x) for x in line.strip()] for line in lines]
 
     visible: list[list[bool]] = visible_from_edges(field)

@@ -1,6 +1,6 @@
 def main():
     board = []
-    f = open("input.txt", "r")
+    f = open("input/input11.txt", "r")
     for line in f:
         board.append([int(a) for a in line.replace("\n", "")])
     f.close()
@@ -28,7 +28,7 @@ def main():
 
 def main2():
     board = []
-    f = open("input.txt", "r")
+    f = open("input/input11.txt", "r")
     for line in f:
         board.append([int(a) for a in line.replace("\n", "")])
     f.close()

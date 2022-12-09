@@ -3,7 +3,7 @@ me_choices: list[str] = ["X", "Y", "Z"]
 
 
 def main():
-    text: list[str] = open('input2.txt', 'r').read().split("\n")
+    text: list[str] = open('input/input2.txt', 'r').read().split("\n")
     score_1: int = 0
     score_2: int = 0
     for line in text:

@@ -2,7 +2,7 @@ import itertools
 
 
 def main():
-    f = open("input.txt", "r")
+    f = open("input/input8.txt", "r")
     lines = f.readlines()
     f.close()
     correctValues = [2, 3, 4, 7]
@@ -15,7 +15,7 @@ def main():
 
 
 def main2():
-    f = open("input.txt", "r")
+    f = open("input/input8.txt", "r")
     lines = f.readlines()
     f.close()
     alphabet = ["a", "b", "c", "d", "e", "f", "g"]

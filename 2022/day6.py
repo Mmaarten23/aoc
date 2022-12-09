@@ -1,5 +1,5 @@
 def main():
-    text: str = open('input6.txt', 'r').read()
+    text: str = open('input/input6.txt', 'r').read()
     part_1 = 0
     part_2 = 0
     for i in range(len(text)):

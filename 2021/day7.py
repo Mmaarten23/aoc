@@ -1,5 +1,5 @@
 def main():
-    f = open("input.txt", "r")
+    f = open("input/input7.txt", "r")
     lines = f.readlines()
     f.close()
     crabs = [int(a) for a in lines[0].split(",") if a != "\n"]

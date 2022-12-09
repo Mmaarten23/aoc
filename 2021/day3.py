@@ -1,7 +1,7 @@
 def main1(length):
     arr = [0] * length
     count = 0
-    f = open("input.txt", "r")
+    f = open("input/input3.txt", "r")
     for line in f:
         chars = [char for char in line]
         for el in range(0, len(chars) - 1):
@@ -20,7 +20,7 @@ def main1(length):
 
 def main2():
     lines = []
-    f = open("input.txt", "r")
+    f = open("input/input3.txt", "r")
     for line in f:
         lines.append([char for char in line if char != "\n"])
     f.close()
@@ -42,7 +42,7 @@ def main2():
     int_oxygen = int(oxygen, 2)
 
     lines = []
-    f = open("input.txt", "r")
+    f = open("input/input3.txt", "r")
     for line in f:
         lines.append([char for char in line if char != "\n"])
     f.close()
