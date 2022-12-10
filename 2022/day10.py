@@ -11,7 +11,7 @@ def main():
             signal += cycle * x
 
         if abs((cycle - 1) % 40 - x) <= 1:
-            screen[(cycle - 1) // 40][(cycle - 1) % 40] = '#'
+            screen[(cycle - 1) // 40][(cycle - 1) % 40] = '█'
 
         if cooldown:
             cooldown = False
