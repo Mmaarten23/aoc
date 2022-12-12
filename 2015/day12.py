@@ -2,7 +2,6 @@ import json
 import re
 
 
-
 def main():
     old: str = open('input/input12.txt', 'r').read()
     numbers: list[int] = [int(x) for x in re.findall(r'(-?\d+)\D', old)]
