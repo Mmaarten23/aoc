@@ -1,4 +1,3 @@
-# @formatter:off
 import time
 blocks: list[list[tuple[int, int]]] = [
     [
@@ -25,7 +24,6 @@ blocks: list[list[tuple[int, int]]] = [
         (0, 0), (0, 1)
     ]
 ]
-# @formatter:on
 
 
 def main():
