@@ -8,7 +8,7 @@ def main():
     air: list[tuple[int, int, int]] = generate_air(22, droplets)
     exterior_surface_area: int = 0
     for droplet in droplets:
-        exterior_surface_area += amount_of_exterior_exposed_sides(air, droplet, droplets)
+        exterior_surface_area += amount_of_exterior_exposed_sides(air, droplet)
     print(f'Part 1: {total_surface_area}')
     print(f'Part 2: {exterior_surface_area}')
 
@@ -75,8 +75,7 @@ def is_next_to_air(x: int, y: int, z: int, air: list[tuple[int, int, int]]) -> b
 
 def amount_of_exterior_exposed_sides(
         air: list[tuple[int, int, int]],
-        droplet: tuple[int, int, int],
-        droplets: list[tuple[int, int, int]]
+        droplet: tuple[int, int, int]
 ) -> int:
     sides: int = 0
     for air_cube in air:
